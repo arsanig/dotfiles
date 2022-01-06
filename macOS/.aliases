@@ -3,6 +3,3 @@ alias update="omz update; brew update; brew upgrade; brew cleanup;"
 
 #List colors for use oh-my-zsh themes because I'm too lazy to remember spectrum_ls
 alias colors="spectrum_ls"
-
-#Usable only within directories that have a venv setup
-alias activate=". venv/bin/activate"
