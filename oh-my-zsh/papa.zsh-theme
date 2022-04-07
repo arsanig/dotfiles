@@ -3,7 +3,7 @@ username() {
 }
 
 datetime() {
-    echo "%F{243}[%D{%f/%m/%Y}|%D{%L:%M:%S}]%f"
+    echo "%F{243}[ %D{%d/%m/%Y} | %D{%I:%M:%S} ]%f"
 }
 
 directory() {
@@ -18,10 +18,10 @@ git_info() {
     echo "%F{081}$(git_prompt_info)%f"
 }
 
-dollar_sign_line_entry () {
+dollar_sign() {
     echo "%F{white}$%f"
 }
 
 # papa.zsh-theme
 PROMPT='$(datetime) $(username) $(directory) $(angle_brace) $(git_info)
-$(dollar_sign_line_entry) '
+$(dollar_sign) '

@@ -1,5 +1,8 @@
 #Pull updates
-alias update="omz update; brew update; brew upgrade; brew cleanup;"
+alias update="brew update; brew upgrade; brew cleanup; omz update;"
+
+#Open in finder
+alias o="open ."
 
 #List colors for use oh-my-zsh themes because I'm too lazy to remember spectrum_ls
 alias colors="spectrum_ls"
