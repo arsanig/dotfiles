@@ -1,11 +1,11 @@
-#Pull updates
-alias update="brew update; brew upgrade; omz update;"
+# Pull updates
+alias update="brew update; brew upgrade; brew doctor; omz update;"
 
-#Open in finder
+# Open in finder
 alias o="open ."
 
-#List colors for use oh-my-zsh themes because I'm too lazy to remember spectrum_ls
+# List colors for use oh-my-zsh themes because I'm too lazy to remember spectrum_ls
 alias colors="spectrum_ls"
 
-#colorls shortform
+# Colorls shortform
 alias lc='colorls -1a --sd'
