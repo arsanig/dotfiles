@@ -451,7 +451,7 @@
     fi
 
     local ahead_icon=$'\uF0AA'
-    local behind_icon=$'\uF063'
+    local behind_icon=$'\uF0AB'
     if (( VCS_STATUS_COMMITS_AHEAD || VCS_STATUS_COMMITS_BEHIND )); then
       # ⇣42 if behind the remote.
       (( VCS_STATUS_COMMITS_BEHIND )) && res+=" ${meta}${behind_icon} ${VCS_STATUS_COMMITS_BEHIND}%f"
