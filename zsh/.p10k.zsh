@@ -418,8 +418,10 @@
       # If local branch name is at most 32 characters long, show it in full.
       # Otherwise show the first 12 … the last 12.
       # Tip: To always show local branch name in full without truncation, delete the next line.
-    #   (( $#branch > 32 )) && branch[13,-13]="…"  # <-- this line
-      res+="${meta}${(g::)POWERLEVEL9K_VCS_BRANCH_ICON}[${VCS_STATUS_COMMIT[1,7]}]${branch//\%/%%}"
+      #   (( $#branch > 32 )) && branch[13,-13]="…"  # <-- this line
+      # Line below is if you want to display commit hash with first seven characters
+      #   res+="${meta}${(g::)POWERLEVEL9K_VCS_BRANCH_ICON}[${VCS_STATUS_COMMIT[1,7]}]${branch//\%/%%}"
+      res+="${meta}${(g::)POWERLEVEL9K_VCS_BRANCH_ICON}${branch//\%/%%}"
     fi
 
     if [[ -n $VCS_STATUS_TAG

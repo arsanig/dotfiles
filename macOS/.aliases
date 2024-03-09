@@ -1,11 +1,29 @@
-# Pull updates
-alias update="brew update; brew upgrade; brew doctor; omz update;"
+#Pull updates
+alias update="brew update; brew upgrade; brew cleanup -s; brew doctor; omz update;"
 
-# Open in finder
+#Open in finder
 alias o="open ."
 
-# List colors for use oh-my-zsh themes because I'm too lazy to remember spectrum_ls
+#List colors for use oh-my-zsh themes because I'm too lazy to remember spectrum_ls
 alias colors="spectrum_ls"
 
-# Colorls shortform
-alias lc='colorls -1a --sd'
+#colorls shortform
+alias lc="colorls -1a --sd"
+
+#Git
+alias gs="git status"
+alias gd="git diff"
+alias gaa="git add ."
+alias gr="git restore"
+alias grs="git restore --staged"
+alias gc="git commit -m"
+alias gca="git commit -am"
+alias gp="git push"
+alias gf="git pull"
+alias gpu="git push -u origin"
+alias gco="git checkout"
+alias glgr="git log --reverse"
+alias gmm="git merge master"
+
+#npm run shortcut
+alias nr="npm run"
