@@ -1,0 +1,13 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = arsani
+	email = arsanig@users.noreply.github.com 
+[init]
+	defaultBranch = main
+[core]
+	pager = cat
+[advice]
+	addIgnoredFile = false
+[alias]
+	lgr = log --reverse
